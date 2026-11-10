@@ -1,0 +1,97 @@
+{
+  "slug": "voltcart",
+  "name": "VoltCart",
+  "owner": "Rohit",
+  "port": 4102,
+  "theme": "volt",
+  "headline": "Upgrade your\neveryday setup.",
+  "sub": "Smart gear. Clear specs. Zero guesswork. Discover the essentials for your next great setup.",
+  "categories": [
+    "Audio",
+    "Keyboards",
+    "Charging",
+    "Accessories"
+  ],
+  "products": [
+    {
+      "id": "voltcart-1",
+      "name": "Pulse wireless headphones",
+      "category": "Audio",
+      "price": 2499,
+      "art": "headphones",
+      "color": "Graphite",
+      "spec": "Over-ear design · Wireless listening",
+      "stock": 20,
+      "rating": "4.6",
+      "image": "/images/headphones.jpg",
+      "imageSource": "https://unsplash.com/photos/black-wireless-headphones-on-white-table-6jMXHpbpL0M"
+    },
+    {
+      "id": "voltcart-2",
+      "name": "Nova mechanical keyboard",
+      "category": "Keyboards",
+      "price": 3499,
+      "art": "keyboard",
+      "color": "Charcoal and orange",
+      "spec": "Compact layout · Mechanical keys",
+      "stock": 23,
+      "rating": "4.7",
+      "image": "/images/keyboard.jpg",
+      "imageSource": "https://unsplash.com/photos/a-keyboard-sitting-on-top-of-a-wooden-table-pgK2Khi85dU"
+    },
+    {
+      "id": "voltcart-3",
+      "name": "Core USB wall charger",
+      "category": "Charging",
+      "price": 1499,
+      "art": "charger",
+      "color": "Clean white",
+      "spec": "Compact design · USB charging",
+      "stock": 26,
+      "rating": "4.8",
+      "image": "/images/charger.jpg",
+      "imageSource": "https://unsplash.com/photos/white-charger-adapter-on-pink-surface-9FwoNzfdxaU"
+    },
+    {
+      "id": "voltcart-4",
+      "name": "Arc everyday mouse",
+      "category": "Accessories",
+      "price": 1199,
+      "art": "mouse",
+      "color": "Graphite",
+      "spec": "Comfortable grip · Scroll wheel",
+      "stock": 29,
+      "rating": "4.6",
+      "image": "/images/mouse.jpg",
+      "imageSource": "https://unsplash.com/photos/a-computer-mouse-sitting-on-top-of-a-black-surface-1sOMh1E9WrM"
+    },
+    {
+      "id": "voltcart-5",
+      "name": "Echo portable speaker",
+      "category": "Audio",
+      "price": 1799,
+      "art": "speaker",
+      "color": "Classic black",
+      "spec": "Portable audio · Carry strap",
+      "stock": 32,
+      "rating": "4.7",
+      "image": "/images/speaker.jpg",
+      "imageSource": "https://unsplash.com/photos/person-holding-black-wireless-speaker-UbRlWYpgrL0"
+    },
+    {
+      "id": "voltcart-6",
+      "name": "Link USB hub",
+      "category": "Accessories",
+      "price": 1999,
+      "art": "hub",
+      "color": "Classic black",
+      "spec": "7 USB ports · Individual switches",
+      "stock": 35,
+      "rating": "4.8",
+      "image": "/images/hub.jpg",
+      "imageSource": "https://unsplash.com/photos/black-usb-hub-with-seven-ports-and-switches-XxvKhAUs2PA"
+    }
+  ],
+  "special": "Express delivery",
+  "extra": 99
+}

@@ -1,0 +1,357 @@
+Started by user admin
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Users\Rohit\Documents\Codex\2026-11-07\1-aim-of-case-study-to\work\jenkins-home\workspace\rohit-voltcart-ci
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] timestamps
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] powershell
+[2026-11-10T16:54:54.314Z] 
+[2026-11-10T16:54:54.314Z] -------------------------------------------------------------------------------
+[2026-11-10T16:54:54.314Z]    ROBOCOPY     ::     Robust File Copy for Windows                              
+[2026-11-10T16:54:54.314Z] -------------------------------------------------------------------------------
+[2026-11-10T16:54:54.314Z] 
+[2026-11-10T16:54:54.314Z]   Started : 10 November 2026 22:24:53
+[2026-11-10T16:54:54.314Z]    Source : C:\Users\Rohit\OneDrive\Documents\Rohit devops\
+[2026-11-10T16:54:54.314Z]      Dest : C:\Users\Rohit\Documents\Codex\2026-11-07\1-aim-of-case-study-to\work\jenkins-home\workspace\rohit-voltcart-ci\
+[2026-11-10T16:54:54.314Z] 
+[2026-11-10T16:54:54.314Z]     Files : *.*
+[2026-11-10T16:54:54.314Z] 	    
+[2026-11-10T16:54:54.314Z] Exc Files : *.log
+[2026-11-10T16:54:54.314Z] 	    
+[2026-11-10T16:54:54.314Z]  Exc Dirs : node_modules
+[2026-11-10T16:54:54.314Z] 	    dist
+[2026-11-10T16:54:54.314Z] 	    coverage
+[2026-11-10T16:54:54.314Z] 	    data
+[2026-11-10T16:54:54.314Z] 	    .git
+[2026-11-10T16:54:54.314Z] 	    .docker-auth
+[2026-11-10T16:54:54.315Z] 	    
+[2026-11-10T16:54:54.315Z]   Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+[2026-11-10T16:54:54.315Z] 
+[2026-11-10T16:54:54.315Z] ------------------------------------------------------------------------------
+[2026-11-10T16:54:54.315Z] 
+[2026-11-10T16:54:54.315Z] 	                  15	C:\Users\Rohit\OneDrive\Documents\Rohit devops\
+[2026-11-10T16:54:54.315Z] 	    New File  		      54	.dockerignore
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     126	.env.example
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		      49	.gitattributes
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		      68	.gitignore
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		    2920	catalog.json
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     970	compose.yaml
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     521	Dockerfile
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     463	index.html
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		    4287	Jenkinsfile
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		  248666	package-lock.json
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		    1081	package.json
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		    2485	README.md
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     196	sonar-project.properties
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     385	START-HERE.cmd
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		     196	vite.config.js
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\.github\
+[2026-11-10T16:54:54.315Z] 	  New Dir          2	C:\Users\Rohit\OneDrive\Documents\Rohit devops\.github\examples\
+[2026-11-10T16:54:54.315Z] 	    New File  		    1461	ci.yml
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	    New File  		    2346	deploy.yml
+[2026-11-10T16:54:54.315Z] 100%  
+[2026-11-10T16:54:54.315Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\.github\workflows\
+[2026-11-10T16:54:54.315Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\chromedriver\
+[2026-11-10T16:54:54.315Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\chromedriver\win64\
+[2026-11-10T16:54:54.315Z] 	  New Dir          1	C:\Users\Rohit\OneDrive\Documents\Rohit devops\chromedriver\win64\156.0.8078.80\
+[2026-11-10T16:54:54.315Z] 	    New File  		  23.1 m	chromedriver.exe
+[2026-11-10T16:54:54.315Z]   4.3%
+[2026-11-10T16:54:54.315Z]   8.6%
+[2026-11-10T16:54:54.315Z]  12.9%
+[2026-11-10T16:54:54.315Z]  17.2%
+[2026-11-10T16:54:54.315Z]  21.5%
+[2026-11-10T16:54:54.315Z]  25.9%
+[2026-11-10T16:54:54.315Z]  30.2%
+[2026-11-10T16:54:54.315Z]  34.5%
+[2026-11-10T16:54:54.316Z]  38.8%
+[2026-11-10T16:54:54.316Z]  43.1%
+[2026-11-10T16:54:54.316Z]  47.4%
+[2026-11-10T16:54:54.316Z]  51.8%
+[2026-11-10T16:54:54.316Z]  56.1%
+[2026-11-10T16:54:54.316Z]  60.4%
+[2026-11-10T16:54:54.316Z]  64.7%
+[2026-11-10T16:54:54.316Z]  69.0%
+[2026-11-10T16:54:54.316Z]  73.3%
+[2026-11-10T16:54:54.316Z]  77.7%
+[2026-11-10T16:54:54.316Z]  82.0%
+[2026-11-10T16:54:54.316Z]  86.3%
+[2026-11-10T16:54:54.316Z]  90.6%
+[2026-11-10T16:54:54.316Z]  94.9%
+[2026-11-10T16:54:54.316Z]  99.2%
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          5	C:\Users\Rohit\OneDrive\Documents\Rohit devops\docs\
+[2026-11-10T16:54:54.316Z] 	    New File  		    3503	DEPLOYMENT.md
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    3484	JENKINS.md
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    1232	PHOTO-CREDITS.md
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    2623	PRACTICAL.md
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    1127	VERIFICATION.md
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          4	C:\Users\Rohit\OneDrive\Documents\Rohit devops\docs\evidence\
+[2026-11-10T16:54:54.316Z] 	    New File  		  443042	voltcart-collection.png
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		  204159	voltcart-desktop.png
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		   89857	voltcart-mobile.png
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		  136672	voltcart-order.png
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          4	C:\Users\Rohit\OneDrive\Documents\Rohit devops\ops\
+[2026-11-10T16:54:54.316Z] 	    New File  		    1214	deploy.sh
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    4025	jenkins.ps1
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    3931	local-k8s.ps1
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		     120	prometheus.yml
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\ops\grafana\
+[2026-11-10T16:54:54.316Z] 	  New Dir          1	C:\Users\Rohit\OneDrive\Documents\Rohit devops\ops\grafana\datasources\
+[2026-11-10T16:54:54.316Z] 	    New File  		     139	prometheus.yml
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          2	C:\Users\Rohit\OneDrive\Documents\Rohit devops\ops\k8s\
+[2026-11-10T16:54:54.316Z] 	    New File  		    1280	deployment.yaml
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		     191	service.yaml
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          0	C:\Users\Rohit\OneDrive\Documents\Rohit devops\public\
+[2026-11-10T16:54:54.316Z] 	  New Dir          6	C:\Users\Rohit\OneDrive\Documents\Rohit devops\public\images\
+[2026-11-10T16:54:54.316Z] 	    New File  		   70960	charger.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		   72720	headphones.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		   54480	hub.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		  256675	keyboard.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		   30506	mouse.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		  203117	speaker.jpg
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          3	C:\Users\Rohit\OneDrive\Documents\Rohit devops\server\
+[2026-11-10T16:54:54.316Z] 	    New File  		    2215	app.js
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    1683	index.js
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    1059	order.js
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          2	C:\Users\Rohit\OneDrive\Documents\Rohit devops\src\
+[2026-11-10T16:54:54.316Z] 	    New File  		   11614	main.jsx
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		   14715	style.css
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	  New Dir          2	C:\Users\Rohit\OneDrive\Documents\Rohit devops\tests\
+[2026-11-10T16:54:54.316Z] 	    New File  		    3850	browser.mjs
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 	    New File  		    2973	order.test.js
+[2026-11-10T16:54:54.316Z] 100%  
+[2026-11-10T16:54:54.316Z] 
+[2026-11-10T16:54:54.317Z] ------------------------------------------------------------------------------
+[2026-11-10T16:54:54.317Z] 
+[2026-11-10T16:54:54.317Z]                Total    Copied   Skipped  Mismatch    FAILED    Extras
+[2026-11-10T16:54:54.317Z]     Dirs :        22        17         5         0         0         0
+[2026-11-10T16:54:54.317Z]    Files :        47        47         0         0         0         0
+[2026-11-10T16:54:54.317Z]    Bytes :   24.96 m   24.96 m         0         0         0         0
+[2026-11-10T16:54:54.317Z]    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+[2026-11-10T16:54:54.317Z] 
+[2026-11-10T16:54:54.317Z] 
+[2026-11-10T16:54:54.317Z]    Speed :           22,76,49,947 Bytes/sec.
+[2026-11-10T16:54:54.317Z]    Speed :             13,026.234 MegaBytes/min.
+[2026-11-10T16:54:54.317Z]    Ended : 10 November 2026 22:24:53
+[2026-11-10T16:54:54.317Z] 
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Check tools)
+[Pipeline] powershell
+[2026-11-10T16:54:57.376Z] v24.15.0
+[2026-11-10T16:54:57.377Z] 11.2.0
+[2026-11-10T16:54:57.949Z] git version 2.54.0.windows.1
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Install packages)
+[Pipeline] powershell
+[2026-11-10T16:55:16.353Z] powershell.exe : npm warn deprecated prom-client@15.1.3: prom-client has been replaced by @prometheus-io/client
+[2026-11-10T16:55:16.353Z] At C:\Users\Rohit\Documents\Codex\2026-11-07\1-aim-of-case-study-to\work\jenkins-home\workspace\rohit-voltcart-ci@tmp\durable-26bcf816\powershellWrapper.ps1:3 char:1
+[2026-11-10T16:55:16.353Z] + & powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -Comm ...
+[2026-11-10T16:55:16.353Z] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-11-10T16:55:16.353Z]     + CategoryInfo          : NotSpecified: (npm warn deprec...theus-io/client:String) [], RemoteException
+[2026-11-10T16:55:16.353Z]     + FullyQualifiedErrorId : NativeCommandError
+[2026-11-10T16:55:16.353Z]  
+[2026-11-10T16:55:16.353Z] npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. 
+[2026-11-10T16:55:16.353Z] Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+[2026-11-10T16:55:28.621Z] 
+[2026-11-10T16:55:28.621Z] added 418 packages, and audited 419 packages in 27s
+[2026-11-10T16:55:28.621Z] 
+[2026-11-10T16:55:28.621Z] 19 vulnerabilities (3 low, 16 moderate)
+[2026-11-10T16:55:28.621Z] 
+[2026-11-10T16:55:28.621Z] To address issues that do not require attention, run:
+[2026-11-10T16:55:28.621Z]   npm audit fix
+[2026-11-10T16:55:28.621Z] 
+[2026-11-10T16:55:28.621Z] To address all issues (including breaking changes), run:
+[2026-11-10T16:55:28.621Z]   npm audit fix --force
+[2026-11-10T16:55:28.621Z] 
+[2026-11-10T16:55:28.621Z] Run `npm audit` for details.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Jest tests)
+[Pipeline] powershell
+[2026-11-10T16:55:31.674Z] 
+[2026-11-10T16:55:31.674Z] > voltcart@1.0.0 test
+[2026-11-10T16:55:31.674Z] > node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --coverage
+[2026-11-10T16:55:31.674Z] 
+[2026-11-10T16:55:34.996Z] powershell.exe : (node:23068) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+[2026-11-10T16:55:34.996Z] At C:\Users\Rohit\Documents\Codex\2026-11-07\1-aim-of-case-study-to\work\jenkins-home\workspace\rohit-voltcart-ci@tmp\durable-534a1fe3\powershellWrapper.ps1:3 char:1
+[2026-11-10T16:55:34.996Z] + & powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -Comm ...
+[2026-11-10T16:55:34.996Z] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-11-10T16:55:34.996Z]     + CategoryInfo          : NotSpecified: ((node:23068) Ex...nge at any time:String) [], RemoteException
+[2026-11-10T16:55:34.996Z]     + FullyQualifiedErrorId : NativeCommandError
+[2026-11-10T16:55:34.996Z]  
+[2026-11-10T16:55:34.996Z] (Use `node --trace-warnings ...` to show where the warning was created)
+[2026-11-10T16:55:34.996Z]   console.error
+[2026-11-10T16:55:34.996Z]     {"event":"request_error","type":"Error"}
+[2026-11-10T16:55:34.996Z] 
+[2026-11-10T16:55:34.996Z]       17 |  app.use('/api',(req,res)=>res.status(404).json({error:'API route not found'}));
+[2026-11-10T16:55:34.996Z]       18 |  app.use(express.static(path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../dist')));
+[2026-11-10T16:55:34.996Z]     > 19 |  app.use((err,req,res,next)=>{if(err instanceof SyntaxError && err.status===400)return res.status(400).json({error:'Invalid JSON.'});console.error(JSON.stringify({event:'request_error',type:err.name}));res.status(500).json({error:'Unable to process request. Please try again.'});});
+[2026-11-10T16:55:34.996Z]          |                                                                                                                                              ^
+[2026-11-10T16:55:34.996Z]       20 |  return app;
+[2026-11-10T16:55:34.996Z]       21 | }
+[2026-11-10T16:55:34.996Z] 
+[2026-11-10T16:55:34.996Z]       at error (server/app.js:19:142)
+[2026-11-10T16:55:34.996Z]       at Layer.handleError (node_modules/router/lib/layer.js:116:17)
+[2026-11-10T16:55:34.996Z]       at trimPrefix (node_modules/router/index.js:340:13)
+[2026-11-10T16:55:34.996Z]       at node_modules/router/index.js:297:9
+[2026-11-10T16:55:34.996Z]       at processParams (node_modules/router/index.js:582:12)
+[2026-11-10T16:55:34.996Z]       at next (node_modules/router/index.js:291:5)
+[2026-11-10T16:55:34.996Z]       at Layer.handleError (node_modules/router/lib/layer.js:111:12)
+[2026-11-10T16:55:34.996Z]       at trimPrefix (node_modules/router/index.js:340:13)
+[2026-11-10T16:55:34.996Z]       at node_modules/router/index.js:297:9
+[2026-11-10T16:55:34.996Z]       at processParams (node_modules/router/index.js:582:12)
+[2026-11-10T16:55:34.996Z]       at next (node_modules/router/index.js:291:5)
+[2026-11-10T16:55:34.996Z]       at Layer.handleError (node_modules/router/lib/layer.js:111:12)
+[2026-11-10T16:55:34.996Z]       at trimPrefix (node_modules/router/index.js:340:13)
+[2026-11-10T16:55:34.996Z]       at node_modules/router/index.js:297:9
+[2026-11-10T16:55:34.996Z]       at processParams (node_modules/router/index.js:582:12)
+[2026-11-10T16:55:34.996Z]       at next (node_modules/router/index.js:291:5)
+[2026-11-10T16:55:34.996Z]       at next (node_modules/router/lib/route.js:132:14)
+[2026-11-10T16:55:34.996Z]       at next (server/app.js:16:333)
+[2026-11-10T16:55:34.996Z] 
+[2026-11-10T16:55:34.996Z] ----------|---------|----------|---------|---------|-------------------
+[2026-11-10T16:55:34.996Z] File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+[2026-11-10T16:55:34.996Z] ----------|---------|----------|---------|---------|-------------------
+[2026-11-10T16:55:34.996Z] All files |   98.27 |    89.47 |     100 |     100 |                   
+[2026-11-10T16:55:34.996Z]  app.js   |   97.43 |       75 |     100 |     100 | 12                
+[2026-11-10T16:55:34.996Z]  order.js |     100 |    96.15 |     100 |     100 | 4                 
+[2026-11-10T16:55:34.996Z] ----------|---------|----------|---------|---------|-------------------
+[2026-11-10T16:55:35.254Z] Test Suites: 1 passed, 1 total
+[2026-11-10T16:55:35.254Z] Tests:       20 passed, 20 total
+[2026-11-10T16:55:35.254Z] Snapshots:   0 total
+[2026-11-10T16:55:35.254Z] Time:        2.918 s
+[2026-11-10T16:55:35.254Z] Ran all test suites.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build frontend)
+[Pipeline] powershell
+[2026-11-10T16:55:37.409Z] 
+[2026-11-10T16:55:37.409Z] > voltcart@1.0.0 build
+[2026-11-10T16:55:37.409Z] > vite build
+[2026-11-10T16:55:37.409Z] 
+[2026-11-10T16:55:38.370Z] vite v7.3.7 building client environment for production...
+[2026-11-10T16:55:38.371Z] transforming...
+[2026-11-10T16:55:39.767Z] ✓ 24 modules transformed.
+[2026-11-10T16:55:39.767Z] rendering chunks...
+[2026-11-10T16:55:39.767Z] computing gzip size...
+[2026-11-10T16:55:39.767Z] dist/index.html                   0.56 kB │ gzip:  0.38 kB
+[2026-11-10T16:55:39.767Z] dist/assets/index-C3g_LKIm.css   14.62 kB │ gzip:  4.06 kB
+[2026-11-10T16:55:39.767Z] dist/assets/index-DskRC3R2.js   235.59 kB │ gzip: 73.82 kB
+[2026-11-10T16:55:39.767Z] ✓ built in 1.47s
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build Docker image)
+Stage "Build Docker image" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Run Docker staging)
+Stage "Run Docker staging" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Selenium checkout)
+Stage "Selenium checkout" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Push Docker Hub image)
+Stage "Push Docker Hub image" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy local Kubernetes staging)
+Stage "Deploy local Kubernetes staging" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Approve production)
+Stage "Approve production" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy local Kubernetes production)
+Stage "Deploy local Kubernetes production" skipped due to when conditional
+[Pipeline] getContext
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] archiveArtifacts
+[2026-11-10T16:55:42.132Z] Archiving artifacts
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // timestamps
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

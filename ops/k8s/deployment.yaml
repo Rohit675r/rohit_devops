@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${APP}-${COLOR}
+  namespace: ${NAMESPACE}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: "${APP}", color: "${COLOR}"}
+  template:
+    metadata:
+      labels: {app: "${APP}", color: "${COLOR}"}
+    spec:
+      containers:
+        - name: app
+          image: ${IMAGE}
+          ports: [{containerPort: 8080}]
+          env:
+            - {name: PORT, value: "8080"}
+            - {name: RELEASE_COLOR, value: "${COLOR}"}
+            - name: MONGODB_URI
+              valueFrom:
+                secretKeyRef: {name: mongo-uri, key: uri}
+          readinessProbe:
+            httpGet: {path: /health, port: 8080}
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            tcpSocket: {port: 8080}
+            initialDelaySeconds: 20
+          resources:
+            requests: {cpu: 100m, memory: 128Mi}
+            limits: {cpu: 500m, memory: 512Mi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            capabilities: {drop: [ALL]}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${APP}-candidate
+  namespace: ${NAMESPACE}
+spec:
+  selector: {app: "${APP}", color: "${COLOR}"}
+  ports: [{port: 80, targetPort: 8080}]

@@ -1,0 +1,52 @@
+name: VoltCart CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+        env:
+          NODE_ENV: test
+      - run: npm run build
+      - name: Start app and Selenium test
+        run: |
+          npm start > /tmp/shop-api.log 2>&1 &
+          for i in {1..30}; do curl -fsS http://localhost:4202/health && break || sleep 1; done
+          npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage
+      - name: Check container build
+        run: docker build -t voltcart:ci .
+  sonar:
+    if: github.event_name == 'push' && vars.ENABLE_SONAR == 'true'
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: coverage
+          path: coverage
+      - uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      - uses: SonarSource/sonarqube-quality-gate-action@v1
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
