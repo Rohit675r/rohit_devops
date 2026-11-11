@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" data-brand></a>
+      <a class="button button-outline" href="index.html#collection">
+        Continue shopping
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap cart-page">
+    <a class="back-link" href="index.html#collection">← Back to the shop</a>
+    <div class="cart-heading">
+      <h1 id="cart-title" tabindex="-1">Your cart</h1>
+      <p id="cart-count" class="muted" aria-live="polite"></p>
+    </div>
+
+    <div class="cart-layout">
+      <section class="panel" aria-label="Items in your cart">
+        <div id="cart-items"></div>
+      </section>
+
+      <aside class="panel summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">Order summary</h2>
+
+        <label class="gift-option" id="gift-option" hidden>
+          <input type="checkbox" id="gift-wrap">
+          <span>Add gift wrapping</span>
+          <strong id="gift-option-price"></strong>
+        </label>
+
+        <dl class="totals">
+          <div><dt>Subtotal</dt><dd id="subtotal">₹0</dd></div>
+          <div id="gift-row" hidden>
+            <dt>Gift wrapping</dt><dd id="gift-price">₹0</dd>
+          </div>
+          <div class="total">
+            <dt>Total</dt><dd id="total" aria-live="polite">₹0</dd>
+          </div>
+        </dl>
+
+        <p class="muted">Demo cart. No payment is collected.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="wrap footer"><span data-brand></span> · Demo store</footer>
+</body>
+</html>

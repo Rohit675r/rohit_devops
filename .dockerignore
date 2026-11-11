@@ -1,12 +1,6 @@
 node_modules
-dist
 .git
 coverage
-data
 .env
 .env.*
-work
-
-chromedriver
-chrome
-selenium
+npm-debug.log*

@@ -1,1 +1,59 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#111821"/><meta name="description" content="VoltCart — Smart gear. Clear specs. Zero guesswork. Discover the essentials for your next great setup."/><title>VoltCart | Rohit's DevOps Project</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" data-brand></a>
+      <a class="button button-outline" href="cart.html">
+        View cart <span class="cart-badge" data-cart-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1 id="headline"></h1>
+        <p id="intro"></p>
+        <a class="button" href="#collection">Shop the collection</a>
+      </div>
+      <div class="hero-photo">
+        <img id="hero-image" alt="" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <h2 id="collection-title"></h2>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search products"
+               aria-label="Search products">
+        <select id="category" aria-label="Filter by category"></select>
+      </div>
+      <p id="results" class="muted" aria-live="polite"></p>
+      <div id="products" class="product-grid"></div>
+
+      <section id="comparison" class="panel comparison" hidden
+               aria-labelledby="comparison-title">
+        <div class="row">
+          <h2 id="comparison-title">Compare your gear</h2>
+          <button id="clear-comparison" class="text-button" type="button">
+            Clear
+          </button>
+        </div>
+        <div id="comparison-items" class="comparison-items"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="notice" class="notice" role="status"></div>
+  <footer class="wrap footer"><span data-brand></span> · Demo store</footer>
+</body>
+</html>
