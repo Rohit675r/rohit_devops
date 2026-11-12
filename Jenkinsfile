@@ -33,7 +33,7 @@ pipeline {
 
         stage('Check running container') {
             steps {
-                powershell './docker-smoke.ps1 -Image "store-ci:$env:BUILD_TAG"'
+                bat '"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -NoProfile -NonInteractive -File "docker-smoke.ps1" -Image "store-ci:%BUILD_TAG%"'
             }
         }
     }
