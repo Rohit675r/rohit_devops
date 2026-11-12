@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("node:path");
 const store = require("./store.js");
 
 const app = express();
@@ -24,7 +23,7 @@ const pages = {
 
 for (const [url, file] of Object.entries(pages)) {
   app.get(url, (req, res) => {
-    res.sendFile(path.join(__dirname, file));
+    res.sendFile(file, { root: __dirname });
   });
 }
 
